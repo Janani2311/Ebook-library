@@ -1,0 +1,154 @@
+body{
+    background-color: #f8f9fa;
+}
+
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    background-color: #e0e7ed;
+    margin: 30px;
+    padding: 30px;
+   
+}
+.card > img{
+    height: 250px;
+}
+.card-body{
+    text-align: center;
+} 
+
+.card-body > button{
+    margin: 0 50px;
+    width: fit-content;
+}
+.card-body > p{
+    margin-bottom: 0.5rem;
+}
+
+.home-icon{
+    width:5%;
+    color: #24659b;
+}
+
+.nav-head{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+.nav-link{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.card{
+    width:14rem;
+}
+
+.card-description{
+    height: auto;
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: nowrap;
+    padding: 30px;
+    background-color: #e0e7ed;
+    justify-content: center;
+    margin: 25px;
+}
+
+.book-image > img{
+    height: auto;
+    width: 100%;
+    
+}
+
+.heading{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px;
+    font-family: fangsong;
+    color: #09375e;
+}
+
+#selected-category{
+    column-count:2;
+}
+
+#viewerCanvas{
+    position:absolute;
+    margin-top: 10px;
+    left: 5%;
+}
+input[type=search] {
+    width: 300px !important;
+}
+.search-container{
+    width:30%;
+}
+
+/*320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops*/
+
+
+@media only screen and (min-width: 200px) and (max-width: 700px){
+    #viewerCanvas{
+        width: 400px !important;
+    }
+    .heading{
+        display:block;
+        margin:25px;
+    }
+    input[type=search] {
+        margin-top: 5px;
+        width: 200px !important;
+    }
+    .card-wrapper {
+        font-size: smaller;
+        font-weight: 700;
+    }
+   
+    .card-description{
+        display:block;
+    }
+    .search-container{
+        width:auto;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 320px){
+    .card-wrapper{
+        width: 80%;
+    }
+    .nav-heading{
+        font-size: large;
+    }
+    .card{
+        height:300px;
+    }
+    .card > img {
+        height: 130px;
+    }
+    .card-body{
+        font-size: x-small;
+    }
+    .card-body > button {
+        height: 25px;
+        font-size: smaller;
+    }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 2400px){
+    .heading{
+        display: flex;
+    }
+    .card-wrapper {
+        font-size: 1em;
+        font-weight: 700;
+    }
+}
